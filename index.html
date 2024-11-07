@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="./alarm.png" alt="not found">
+        <h1 id="currTime">00:00:00 P.M.</h1>
+        <div class="content">
+            <div class="column">
+                <select id="hour-select">
+                    <option value="Hour" selected hidden>Hour</option>
+                </select>
+            </div>
+            <div class="column">
+                <select id="minute-select">
+                    <option value="Minutes" selected hidden>Minutes</option>
+                </select>
+            </div>
+            <div class="column">
+                <select id="ampm-select">
+                    <option value="A.M./P.M." selected hidden>A.M./P.M.</option>
+                </select>
+            </div>
+        </div>
+        <button class="set-alarm-btn" id="set-alarm-btn">Set Alarm</button>
+        <button class="stop-alarm-btn" id="stop-alarm-btn" style="display: none;">Stop Alarm</button>
+
+        <audio id="alarm-sound" src="./brazil-eas-alarm-blood-moon-260034.mp3" preload="auto"></audio>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
